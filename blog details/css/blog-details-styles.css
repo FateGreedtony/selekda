@@ -204,4 +204,87 @@ header .menu a {
     text-decoration: none;
     border-radius: 3px;
 }
-/* Start of Tag Styling */
+/* End of Tag Styling */
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    header .menu {
+        gap: 10px;
+    }
+
+    .blog-header h1 {
+        font-size: 2rem;
+    }
+
+    .blog-meta {
+        font-size: 0.8rem;
+    }
+
+    .blog-content p {
+        font-size: 0.9rem;
+    }
+
+    .comments-section h2,
+    .comment-form-section h2,
+    .tag-clouds-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .comment-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comment-item img.user-image {
+        margin-bottom: 10px;
+    }
+
+    .comment-date {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .blog-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .comments-section h2,
+    .comment-form-section h2,
+    .tag-clouds-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .comment-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comment-date {
+        font-size: 0.6rem;
+    }
+
+    .comment-form input, .comment-form textarea {
+        padding: 8px;
+    }
+
+    .comment-form button.btn-submit {
+        padding: 8px 16px;
+    }
+
+    .tag-clouds a.tag {
+        font-size: 12px;
+        padding: 3px 7px;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/portofolio-styles.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <nav>
+                <img src="../landing page/assets/images/icons/logoWeb.jpeg" alt="Logo" class="logo">
+                <ul class="menu">
+                    <li><a href="../landing page/index.html">Home</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="../landing page/index.html#about">About</a></li>
+                    <li><a href="../landing page/index.html#services">Services</a></li>
+                    <li><a href="../landing page/index.html#portfolio">Portfolio</a></li>
+                    <li><a href="../landing page/index.html#news">News</a></li>
+                    <li><a href="../landing page/index.html#testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>    
+
+    <section id="portfolio">
+        <div class="portfolio-section">
+            <h2>My Portfolio</h2>
+
+            <!-- Portfolio Categories Filter -->
+            <div class="portfolio-filters">
+                <button class="filter-btn" data-category="all">All</button>
+                <button class="filter-btn" data-category="web">Web Development</button>
+                <button class="filter-btn" data-category="design">Design</button>
+                <button class="filter-btn" data-category="marketing">Marketing</button>
+            </div>
+
+            <!-- Portfolio List -->
+            <div class="portfolio-items">
+                <div class="portfolio-item" data-category="web">
+                    <img src="assets/images/portfolio/web1.jpg" alt="Project 1">
+                    <h3>Web Project 1</h3>
+                    <p>Author: John Doe | Date: Jan 1, 2024 | Views: 500 | Comments: 10</p>
+                    <button class="detail-btn" data-id="1">View Details</button>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="assets/images/portfolio/design1.jpg" alt="Project 2">
+                    <h3>Design Project 1</h3>
+                    <p>Author: Jane Doe | Date: Feb 2, 2024 | Views: 300 | Comments: 5</p>
+                    <button class="detail-btn" data-id="2">View Details</button>
+                </div>
+                <div class="portfolio-item" data-category="marketing">
+                    <img src="assets/images/portfolio/marketing1.jpg" alt="Project 3">
+                    <h3>Marketing Project 1</h3>
+                    <p>Author: John Smith | Date: Mar 3, 2024 | Views: 400 | Comments: 8</p>
+                    <button class="detail-btn" data-id="3">View Details</button>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="assets/images/portfolio/web2.jpg" alt="Project 4">
+                    <h3>Web Project 2</h3>
+                    <p>Author: Jane Smith | Date: Apr 4, 2024 | Views: 600 | Comments: 12</p>
+                    <button class="detail-btn" data-id="4">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
