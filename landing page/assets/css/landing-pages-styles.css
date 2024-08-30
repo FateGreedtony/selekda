@@ -1,0 +1,359 @@
+/* START OF NORMAL STYLING */
+
+/* Start of Reset Browser Option */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* End of Reset Browser Option */
+
+/* Start of  Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #721414;
+}
+/* End of  Basic styling */
+
+/* Start of Header styling */
+header {
+    background: #4D1515; /* Dark red color */
+    color: #fff;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    width: 70px;
+    height: 70p;
+}
+
+header .menu {
+    display: flex;
+    gap: 20px;
+}
+
+header .menu li {
+    list-style: none;
+}
+
+header .menu a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+/* End of Header styling */
+
+/* Start of Banner styling */
+#banner {
+    background: url('assets/images/gallery/images1.jpeg') no-repeat center center/cover;
+    color: #f0e9e9;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#banner h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#banner .btn {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+/* End of Banner styling */
+
+/* Strat of Section Styling */
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* End of Section Styling */
+
+/* Start of Gallery Styling */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    width: 450px;
+}
+/* End of Gallery Styling */
+
+/* Start of Service Styling */
+.services-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.services-section > .service-item {
+    color: black;
+}
+/* Start of Service Styling */
+
+/* Start of Portfolio styling */
+.portfolio-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.portfolio-item>p {
+    color: #000000;
+}
+/* End of Portfolio styling */
+
+/* Start of testimonials styling */
+.testimonials-section blockquote {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.testimonials-section>blockquote{
+    color: #000000;
+}
+/* End of Testimonials Styling */
+
+/* Start of Search Section Styling */
+.search-section {
+    text-align: center;
+}
+
+.search-section input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* End of Search Section Styling */
+
+/* Start of Footer styling */
+footer {
+    background: #4D1515;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-media img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* End of Footwr Styling */
+
+/* END OF NORMAL STYLING */
+
+
+
+/* START OF ANIMATION STYLING */
+
+/* Start of Link Styling */
+
+a.news {
+    transition: color 0.3s ease;
+}
+
+a.news:hover {
+    color: #ffffff;
+}
+
+a.news:visited {
+    color: #36df77;
+}
+
+a.news:active {
+    color: #ff0000;
+}
+/* End of Link Styling */
+
+/* Start of Banner styling */
+#banner .btn {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#banner .btn:hover {
+    transform: scale(1.5); 
+    background-color: #d6381b; 
+}
+/* End of Banner styling */
+
+/* Start of Gallery Styling */
+.gallery img {
+    width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); 
+}
+/* End of Gallery Styling */
+
+/* Start of Service Styling & Portfolio Items */
+.service-item, .portfolio-item {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.service-item:hover, .portfolio-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+/* End of Service Styling */
+
+/* Start of testimonials styling & Portfolio Items */
+.testimonials-section blockquote {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+}
+
+.testimonials-section blockquote:hover {
+    border: 2px solid #e8491d;
+}
+/* End of Testimonials Styling */
+
+/* END OF ANIMATION STYLING */
+
+/* START OF RESPONSIVE STYLING */
+@media (max-width: 768px) {
+    header .menu {
+        gap: 10px;
+    }
+
+    .services-section, .portfolio-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item, .portfolio-item {
+        width: 90%;
+    }
+
+    #banner h1 {
+        font-size: 30px;
+    }
+
+    #banner p {
+        font-size: 16px;
+    }
+
+    #banner .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        width: 100px;
+    }
+
+    #banner {
+        padding: 80px 10px;
+    }
+
+    #banner h1 {
+        font-size: 24px;
+    }
+
+    #banner p {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .service-item, .portfolio-item {
+        width: 100%;
+    }
+}
+/* END OF RESPONSIVE STYLING */
