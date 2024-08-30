@@ -138,7 +138,7 @@ header .menu a:hover {
 }
 
 .portfolio-item .detail-btn {
-    background: #333;
+    background: #4d1515;
     color: #fff;
     padding: 10px 20px;
     margin: 10px 20px;
@@ -149,7 +149,7 @@ header .menu a:hover {
 }
 
 .portfolio-item .detail-btn:hover {
-    background: #555;
+    background: #7d1515;
 }
 /* End of Portfolio Items */
 
@@ -232,13 +232,13 @@ footer p {
 
     .portfolio-filters .filter-btn {
         margin: 10px 0;
-        width: 100%;
+        width: 50%;
     }
 }
 
 @media (max-width: 480px) {
     header nav {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
